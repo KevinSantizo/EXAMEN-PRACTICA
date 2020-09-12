@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <script src="conversor.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center">
+        <h2>Conversor de monedas</h2>
+        Cantidad: <input class="slider" type="text" id="quantity" min="1" max="10000" value="0" onchange="convert()">
+        <br> <br>
+        <span id="value">0</span>
+        <br><br><br>
+        Cambiar:
+            <select id="from" onchange="convert()" class="select-class" >
+                <option value="1">Quetzal</option>
+                <option value="2">Peso mexicano</option>
+                <option value="3">Dólar</option>
+                <option value="4">Euro</option>
+            </select>
+        <br><br><br>
+        A:
+            <select id="to" onchange="convert()" class="select-class">
+                <option value="1">Quetzal</option>
+                <option value="2">Peso mexicano</option>
+                <option value="3">Dólar</option>
+                <option value="4">Euro</option>
+            </select> 
+        <br><br>
+
+        <h1 id="result">Resultado: $0.0</h1>
+
+    </div>
+</body>
+</html>
